@@ -1,0 +1,13 @@
+<%- include('head.ejs') %>
+  <body>
+    <% if (user_names.length > 0) { %>
+    <ul>
+      <% for (let name of user_names) { %>
+      <li><%= name %></li>
+      <% } %>
+    </ul>
+    <% } else { %>
+    <h1>No names yet!</h1>
+    <% } %>
+  </body>
+</html>
